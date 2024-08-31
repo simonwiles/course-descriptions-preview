@@ -119,7 +119,7 @@
 		background-color: black;
 		border-radius: var(--border-radius);
 		display: grid;
-		gap: 1px;
+		gap: 0 1px;
 		grid-template-columns: var(--cols);
 		height: calc(100vh - 4rem);
 		overflow: hidden;
