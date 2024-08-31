@@ -15,7 +15,7 @@
 	{#each subjectAreaCodes as { code: subjectAreaCode, count }}
 		<button
 			onclick={() => (currentSubjectAreaCode = subjectAreaCode)}
-			aria-current={currentSubjectAreaCode?.id === institution?.id}
+			aria-current={currentSubjectAreaCode == subjectAreaCode}
 			class="waterfall-button"
 		>
 			{subjectAreaCode}
