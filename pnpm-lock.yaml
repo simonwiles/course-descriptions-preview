@@ -8,51 +8,54 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/sarabun':
+        specifier: ^5.0.21
+        version: 5.0.21
       pocketbase:
         specifier: ^0.21.5
         version: 0.21.5
     devDependencies:
       '@sveltejs/adapter-static':
-        specifier: ^3.0.0
+        specifier: ^3.0.4
         version: 3.0.4(@sveltejs/kit@2.5.25(@sveltejs/vite-plugin-svelte@4.0.0-next.6(svelte@5.0.0-next.241)(vite@5.4.2))(svelte@5.0.0-next.241)(vite@5.4.2))
       '@sveltejs/kit':
-        specifier: ^2.0.0
+        specifier: ^2.5.25
         version: 2.5.25(@sveltejs/vite-plugin-svelte@4.0.0-next.6(svelte@5.0.0-next.241)(vite@5.4.2))(svelte@5.0.0-next.241)(vite@5.4.2)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.0-next.6
         version: 4.0.0-next.6(svelte@5.0.0-next.241)(vite@5.4.2)
       '@types/eslint':
-        specifier: ^9.6.0
+        specifier: ^9.6.1
         version: 9.6.1
       eslint:
-        specifier: ^9.0.0
+        specifier: ^9.9.1
         version: 9.9.1
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@9.9.1)
       eslint-plugin-svelte:
-        specifier: ^2.36.0
+        specifier: ^2.43.0
         version: 2.43.0(eslint@9.9.1)(svelte@5.0.0-next.241)
       globals:
-        specifier: ^15.0.0
+        specifier: ^15.9.0
         version: 15.9.0
       prettier:
-        specifier: ^3.1.1
+        specifier: ^3.3.3
         version: 3.3.3
       prettier-plugin-svelte:
-        specifier: ^3.1.2
+        specifier: ^3.2.6
         version: 3.2.6(prettier@3.3.3)(svelte@5.0.0-next.241)
       svelte:
         specifier: ^5.0.0-next.1
         version: 5.0.0-next.241
       svelte-check:
-        specifier: ^3.6.0
+        specifier: ^3.8.6
         version: 3.8.6(postcss-load-config@3.1.4(postcss@8.4.41))(postcss@8.4.41)(svelte@5.0.0-next.241)
       typescript:
-        specifier: ^5.0.0
+        specifier: ^5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.0.3
+        specifier: ^5.4.2
         version: 5.4.2
 
 packages:
@@ -224,6 +227,9 @@ packages:
   '@eslint/object-schema@2.1.4':
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource/sarabun@5.0.21':
+    resolution: {integrity: sha512-dtlBrzm9iuziVi82NDuiTocMC0A+YMj5Rnh+jimQbHS+X6WufoUUivJt7bKNbC2xfGn2MRzZRAvCAbDqngmEWg==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1227,6 +1233,8 @@ snapshots:
   '@eslint/js@9.9.1': {}
 
   '@eslint/object-schema@2.1.4': {}
+
+  '@fontsource/sarabun@5.0.21': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 

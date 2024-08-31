@@ -1,4 +1,6 @@
 <script>
+	import '@fontsource/sarabun';
+
 	import Institutions from '../components/Institutions.svelte';
 	import SubjectAreaCodes from '../components/SubjectAreaCodes.svelte';
 	import CourseDescriptions from '../components/CourseDescriptions.svelte';
@@ -75,7 +77,7 @@
 		body {
 			background-image: linear-gradient(to right bottom, rgb(83, 105, 118), rgb(41, 46, 73));
 			color: #222;
-			font-family: sans-serif;
+			font-family: 'Sarabun', sans-serif;
 			font-size: 18px;
 			margin: 0;
 			padding: 2rem 4rem;
