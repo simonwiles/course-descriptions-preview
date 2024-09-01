@@ -3,23 +3,19 @@
 	let { institution, currentSubjectAreaCode = $bindable() } = $props();
 
 	const getSubjectAreaCodes = () => {
-		return pb.collection('Subject_Area_Codes').getFullList({
-			filter: "institution.institution_id = '" + institution.institution_id + "'",
-			fields: 'code, count',
-			sort: 'code'
-		});
+		return pb.send(`/api/subject-area-codes/${institution.id}`, {});
 	};
 </script>
 
 {#await getSubjectAreaCodes() then subjectAreaCodes}
-	{#each subjectAreaCodes as { code: subjectAreaCode, count }}
+	{#each subjectAreaCodes as { subject_area_code: subjectAreaCode, count }}
 		<button
 			onclick={() => (currentSubjectAreaCode = subjectAreaCode)}
 			aria-current={currentSubjectAreaCode == subjectAreaCode}
 			class="waterfall-button"
 		>
 			{subjectAreaCode}
-			<span>[{count}]</span>
+			<span>[{count.toLocaleString()}]</span>
 		</button>
 	{/each}
 {/await}

@@ -6,7 +6,7 @@
 	const getCourseDescriptions = () => {
 		return pb.collection('Courses').getFullList({
 			filter: `
-        institution.institution_id = '${institution.institution_id}'
+        institution.id = '${institution.id}'
         && subject_area_code = '${subjectAreaCode}'
       `,
 			sort: 'subject_area_code'
